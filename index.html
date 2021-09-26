@@ -4,14 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OMNIFOOD</title>
+    <meta
+      name="description"
+      content="Omnifood é uma
+       assinatura alimentar 
+       alimentada por IA que 
+       o fará comer saudável 
+       novamente, 354 dias por ano,
+       adaptada aos seus gostos pessoais e necessidades nutricionais."
+    />
+    <link rel="icon" href="img/favicon.png" >
+
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <title>Omnifood &mdash; Nunca mais volte a conzinhar</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/queries.css" />
 
-  <!-- <link rel="stylesheet" href="final-css.css"> -->
-  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer></script>  
-  <script src="js/script.js" defer></script>
+    <!-- <link rel="stylesheet" href="final-css.css"> -->
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -24,7 +42,9 @@
           <li><a href="#meal" class="main-nav-link">Refeições</a></li>
           <li><a href="#testimonial" class="main-nav-link">Testemunhos</a></li>
           <li><a href="#pricing" class="main-nav-link">Preço</a></li>
-          <li><a href="#cta" class="main-nav-link nav-cta">Try it for free</a></li>
+          <li>
+            <a href="#cta" class="main-nav-link nav-cta">Try it for free</a>
+          </li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -44,9 +64,7 @@
               fará você se alimentar de forma saudável novamente. Adaptado aos
               seus gostos pessoais e necessidades nutricionais.
             </p>
-            <a href="#cta" class="btn btn--CTA margin-right-sm"
-              >Comendo bem  </a
-            >
+            <a href="#cta" class="btn btn--CTA margin-right-sm">Comendo bem </a>
             <a href="#how" class="btn btn--outline">Aprenda mais &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
@@ -63,11 +81,18 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              class="hero-img"
-              src="img/hero.png"
-              alt="a woman enjoy food,meals in storage container, and food bowls on table"
-            />
+            <picture>
+              <source srcset="img/hero.webp" 
+              type="image/webp"/>
+              <source srcset="img/hero-min.png" 
+              type="image/png"/>
+
+              <img
+                class="hero-img"
+                src="img/hero-min.png"
+                alt="a woman enjoy food,meals in storage container, and food bowls on table"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -176,15 +201,23 @@
               <p class="meal-title">Gyozas japonesas</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
-                  <ion-icon class="meal-icon" class="" name="bonfire-outline"></ion-icon>
-                 <span>calorias <strong>650</strong> </span> </li>
+                  <ion-icon
+                    class="meal-icon"
+                    class=""
+                    name="bonfire-outline"
+                  ></ion-icon>
+                  <span>calorias <strong>650</strong> </span>
+                </li>
                 <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-                 <span> NutriScore &reg;<strong>74</strong></span>
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span> NutriScore &reg;<strong>74</strong></span>
                 </li>
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                 <span> Avaliação média <strong>4.9</strong> </span>
+                  <span> Avaliação média <strong>4.9</strong> </span>
                 </li>
               </ul>
             </div>
@@ -203,16 +236,19 @@
               <p class="meal-title">Salada de abacate</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
-                  <ion-icon  class="meal-icon" name="bonfire-outline"></ion-icon>
-                 <span> calorias <strong>400</strong></span></li>
+                  <ion-icon class="meal-icon" name="bonfire-outline"></ion-icon>
+                  <span> calorias <strong>400</strong></span>
+                </li>
                 <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-                 <span>NutriScore &reg;<strong>92</strong>
-                 </span>               
-                  </li>
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg;<strong>92</strong> </span>
+                </li>
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                 <span> Avaliação média <strong>4.8</strong></span>
+                  <span> Avaliação média <strong>4.8</strong></span>
                 </li>
               </ul>
             </div>
@@ -221,24 +257,69 @@
           <div class="diets">
             <h3 class="heading-tertiary">Funciona com qualquer dieta:</h3>
             <ul class="list">
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Vegetariano</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Vegan</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Pescatariano</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span> Sem glúten</span></li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Sem lactose</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Keto</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Paleo</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>FODMAP baixo</span> </li>
-              <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
-               <span>Adequado para crianças</span> </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Vegetariano</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Vegan</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Pescatariano</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span> Sem glúten</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Sem lactose</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>FODMAP baixo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span>Adequado para crianças</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -251,7 +332,9 @@
       <section class="section-testimonial" id="testimonial">
         <div class="testimonial-container">
           <span class="subheading"> Testemunhos</span>
-          <h2 class="heading-secundary">Depois de experimentar, você não vai querer outra coisa</h2>
+          <h2 class="heading-secundary">
+            Depois de experimentar, você não vai querer outra coisa
+          </h2>
 
           <div class="testimonials">
             <figure class="testimonial">
@@ -381,16 +464,13 @@
               alt="Photo of beautifully arranged food"
             />
           </figure>
-          
         </div>
       </section>
 
       <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading"> Preçário</span>
-          <h2 class="heading-secundary">
-            Comendo bem sem gastar quase nada.
-          </h2>
+          <h2 class="heading-secundary">Comendo bem sem gastar quase nada.</h2>
         </div>
         <div class="container grid grid--2-cols margin-bottom-md">
           <div class="pricing-plan pricing-plan--starter">
@@ -435,37 +515,37 @@
         </div>
         <div class="container grid">
           <aside class="plan-details">
-            Os preços incluem todos os impostos aplicáveis. Os usuários podem cancelar em qualquer
-            momento. Ambos os planos incluem o seguinte:
+            Os preços incluem todos os impostos aplicáveis. Os usuários podem
+            cancelar em qualquer momento. Ambos os planos incluem o seguinte:
           </aside>
         </div>
         <div class="container grid grid--4-cols">
           <div class="feature">
             <p class="feature-title">Nunca cozinhe de novo!</p>
             <p class="feature-text">
-              Nossas assinaturas cobrem 365 dias por ano, incluindo até os principais
-               feriados.
+              Nossas assinaturas cobrem 365 dias por ano, incluindo até os
+              principais feriados.
             </p>
           </div>
           <div class="feature">
             <p class="feature-title">Local e orgânico</p>
             <p class="feature-text">
-              Nossos cozinheiros usam apenas produtos locais, frescos e orgânicos para preparar
-               suas refeições.
+              Nossos cozinheiros usam apenas produtos locais, frescos e
+              orgânicos para preparar suas refeições.
             </p>
           </div>
           <div class="feature">
             <p class="feature-title">Sem desperdício</p>
             <p class="feature-text">
-              Todos os nossos parceiros usam apenas recipientes reutilizáveis para embalar todos os seus
-              refeições.
+              Todos os nossos parceiros usam apenas recipientes reutilizáveis
+              para embalar todos os seus refeições.
             </p>
           </div>
           <div class="feature">
             <p class="feature-title">Cancela a qualquer momento</p>
             <p class="feature-text">
-              Saindo de férias? Basta cancelar sua assinatura e nós o reembolsaremos
-               dias não utilizados.
+              Saindo de férias? Basta cancelar sua assinatura e nós o
+              reembolsaremos dias não utilizados.
             </p>
           </div>
         </div>
@@ -475,16 +555,18 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secundary">Tenha a sua primeira refeição de graça!</h2>
+              <h2 class="heading-secundary">
+                Tenha a sua primeira refeição de graça!
+              </h2>
               <p class="cta-text">
-                Refeições saudáveis, saborosas e descomplicadas esperam por você. Começar
-                comendo bem hoje. Você pode cancelar ou pausar a qualquer momento. E a
-                a primeira refeição é por nossa conta!
+                Refeições saudáveis, saborosas e descomplicadas esperam por
+                você. Começar comendo bem hoje. Você pode cancelar ou pausar a
+                qualquer momento. E a a primeira refeição é por nossa conta!
               </p>
-              <form action="#" class="cta-form">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Nome Completo</label>
-                  <input
+                  <input name="full-name"
                     id="full-name"
                     type="text"
                     placeholder="Manuel Lino"
@@ -493,7 +575,7 @@
                 </div>
                 <div>
                   <label for="email">Correio Electronico</label>
-                  <input
+                  <input name="email"
                     id="email"
                     type="email"
                     placeholder="me@example.com"
@@ -503,7 +585,7 @@
 
                 <div>
                   <label for="">Onde voce ouviu sobre nós?</label>
-                  <select name="" id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="">Porfavor escolha uma opção:</option>
                     <option value="Friends">Amigos e familiares</option>
                     <option value="youtube">Youtube video</option>
@@ -513,7 +595,9 @@
                   </select>
                 </div>
 
-                <button type="submit" class="btn btn--form">Cadastra-se agora</button>
+                <button type="submit" class="btn btn--form">
+                  Cadastra-se agora
+                </button>
               </form>
             </div>
             <div class="cta-img-box"></div>
@@ -529,9 +613,21 @@
             <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
           </a>
           <ul class="social-link">
-            <li><a  class="footer-link social-icon" href="#"><ion-icon name="logo-facebook"></ion-icon></a> </li>
-            <li><a class="footer-link social-icon" href="#"><ion-icon name="logo-instagram"></ion-icon></a> </li>
-            <li><a class="footer-link social-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a> </li>
+            <li>
+              <a class="footer-link social-icon" href="#"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link social-icon" href="#"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link social-icon" href="#"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
           </ul>
 
           <p class="copyright">
@@ -543,41 +639,49 @@
           <address class="contact">
             <p class="address">casa n-15, rua bolama, Lobito</p>
             <p>
-              <a class="footer-link"  href="tel:244 931-188-804">+244 931-188-804</a> <br />
-              <a class="footer-link" href="mailto:mllino1@hotmail.com">mllino1@hotmail.com</a>
+              <a class="footer-link" href="tel:244 931-188-804"
+                >+244 931-188-804</a
+              >
+              <br />
+              <a class="footer-link" href="mailto:mllino1@hotmail.com"
+                >mllino1@hotmail.com</a
+              >
             </p>
           </address>
         </div>
         <nav class="nav-col">
           <p class="footer-heading">Conta</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Criar um conta</a> </li>
-            <li><a  class="footer-link"href="#">iOS app</a> </li>
-            <li><a class="footer-link" href="#">Android app</a> </li>
-          </ul>  
+            <li><a class="footer-link" href="#">Criar um conta</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
         </nav>
         <nav class="nav-col">
           <p class="footer-heading">Empresa</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="">Sobre Omnifood</a> </li>
-            <li><a class="footer-link" href="">Parceiros</a> </li>
-            <li><a class="footer-link" href="">Carreira</a> </li>
-          </ul>  
+            <li><a class="footer-link" href="">Sobre Omnifood</a></li>
+            <li><a class="footer-link" href="">Parceiros</a></li>
+            <li><a class="footer-link" href="">Carreira</a></li>
+          </ul>
         </nav>
         <nav class="nav-col">
           <p class="footer-heading">Recursos</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="">Recipe directory</a> </li>
-            <li><a class="footer-link" href="">Centro de ajuda</a> </li>
-            <li><a class="footer-link" href="">Termo de privacidade</a> </li>
-            
-          </ul>  
+            <li><a class="footer-link" href="">Recipe directory</a></li>
+            <li><a class="footer-link" href="">Centro de ajuda</a></li>
+            <li><a class="footer-link" href="">Termo de privacidade</a></li>
+          </ul>
         </nav>
-        
-        
       </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
