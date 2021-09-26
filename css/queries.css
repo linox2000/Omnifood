@@ -107,6 +107,7 @@ html{
 /* MBILE NAVIGATION */
 .btn-mobile-nav{
   display: block;
+  z-index: 9999;
 }
 .main-nav{
   background-color: #fff;

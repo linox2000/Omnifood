@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="css/queries.css">
 
   <!-- <link rel="stylesheet" href="final-css.css"> -->
-    <script src="js/script.js" defer></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer></script>  
+  <script src="js/script.js" defer></script>
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <a href="#">
         <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Refeições</a></li>
-          <li><a href="#" class="main-nav-link">Testemunhos</a></li>
-          <li><a href="#" class="main-nav-link">Preço</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try it for free</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meal" class="main-nav-link">Refeições</a></li>
+          <li><a href="#testimonial" class="main-nav-link">Testemunhos</a></li>
+          <li><a href="#pricing" class="main-nav-link">Preço</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try it for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -43,10 +44,10 @@
               fará você se alimentar de forma saudável novamente. Adaptado aos
               seus gostos pessoais e necessidades nutricionais.
             </p>
-            <a href="#" class="btn btn--CTA margin-right-sm"
+            <a href="#cta" class="btn btn--CTA margin-right-sm"
               >Comendo bem  </a
             >
-            <a href="#" class="btn btn--outline">Aprenda mais &darr;</a>
+            <a href="#how" class="btn btn--outline">Aprenda mais &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img src="img/customers/customer-1.jpg" alt="customer-photo" />
@@ -87,7 +88,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">Como funciona </span>
           <h2 class="heading-secundary">
@@ -154,7 +155,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meal">
         <div class="container center-text">
           <span class="subheading"> Refeições</span>
           <h2 class="heading-secundary">
@@ -247,10 +248,10 @@
         </div>
       </section>
 
-      <section class="section-testimonial">
+      <section class="section-testimonial" id="testimonial">
         <div class="testimonial-container">
           <span class="subheading"> Testemunhos</span>
-          <h2 class="heading-secundary">Once you try it, you can't go back</h2>
+          <h2 class="heading-secundary">Depois de experimentar, você não vai querer outra coisa</h2>
 
           <div class="testimonials">
             <figure class="testimonial">
@@ -384,26 +385,26 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading"> Preçário</span>
           <h2 class="heading-secundary">
-            Eating well without braking the bank
+            Comendo bem sem gastar quase nada.
           </h2>
         </div>
         <div class="container grid grid--2-cols margin-bottom-md">
           <div class="pricing-plan pricing-plan--starter">
             <header class="plan-header">
-              <p class="plan-name">Starter</p>
+              <p class="plan-name">Simples</p>
               <p class="plan-price"><span>$</span>399</p>
-              <p class="plan-text">per month.That just $13 per meal</p>
+              <p class="plan-text">por mês. Isso é apenas $ 13 por refeição</p>
             </header>
 
             <h3 class="heading-tertiary"></h3>
             <ul class="list">
-              <li class="list-item">1 meal per day</li>
-              <li class="list-item">Order times are between 11am and 9pm</li>
-              <li class="list-item">Delivery is free</li>
+              <li class="list-item">1 refeição por dia</li>
+              <li class="list-item">Os pedidos são entre 11h e 21h</li>
+              <li class="list-item">Entrega é grátis</li>
               <li class="list-item"></li>
               <li class="list-item"></li>
             </ul>
@@ -413,19 +414,19 @@
           </div>
           <div class="pricing-plan pricing-plan--complete">
             <header class="plan-header">
-              <p class="plan-name">Complete</p>
+              <p class="plan-name">Completo</p>
               <p class="plan-price"><span>$</span>649</p>
-              <p class="plan-text">per month.That just $11 per meal</p>
+              <p class="plan-text">por mês. Isso é apenas $ 11 por refeição</p>
             </header>
 
             <h3 class="heading-tertiary"></h3>
             <ul class="list">
-              <li class="list-item"><strong>2 meal</strong> per day</li>
+              <li class="list-item"><strong>2 refeição</strong> por dia</li>
               <li class="list-item">
                 <span>Order</span><strong> 24/7</strong>
               </li>
-              <li class="list-item">Delivery is free</li>
-              <li class="list-item">Get access to latest recipes</li>
+              <li class="list-item">Entrega é grátis</li>
+              <li class="list-item">Tenha acesso às últimas receitas</li>
             </ul>
             <div class="plan-sing-up">
               <a href="#" class="btn btn--CTA"> Começa a se alimentar bem</a>
@@ -434,64 +435,64 @@
         </div>
         <div class="container grid">
           <aside class="plan-details">
-            Prices include all applicable taxes. Users can cancel at any
-            time.Both plans includes the following:
+            Os preços incluem todos os impostos aplicáveis. Os usuários podem cancelar em qualquer
+            momento. Ambos os planos incluem o seguinte:
           </aside>
         </div>
         <div class="container grid grid--4-cols">
           <div class="feature">
-            <p class="feature-title">Never cook again!</p>
+            <p class="feature-title">Nunca cozinhe de novo!</p>
             <p class="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
+              Nossas assinaturas cobrem 365 dias por ano, incluindo até os principais
+               feriados.
             </p>
           </div>
           <div class="feature">
-            <p class="feature-title">Local and organic</p>
+            <p class="feature-title">Local e orgânico</p>
             <p class="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
+              Nossos cozinheiros usam apenas produtos locais, frescos e orgânicos para preparar
+               suas refeições.
             </p>
           </div>
           <div class="feature">
-            <p class="feature-title">No waste</p>
+            <p class="feature-title">Sem desperdício</p>
             <p class="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
+              Todos os nossos parceiros usam apenas recipientes reutilizáveis para embalar todos os seus
+              refeições.
             </p>
           </div>
           <div class="feature">
-            <p class="feature-title">Pause anytime</p>
+            <p class="feature-title">Cancela a qualquer momento</p>
             <p class="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
+              Saindo de férias? Basta cancelar sua assinatura e nós o reembolsaremos
+               dias não utilizados.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secundary">Get your first meal for free!</h2>
+              <h2 class="heading-secundary">Tenha a sua primeira refeição de graça!</h2>
               <p class="cta-text">
-                Healthy, tasty and hassle-free meals are waiting for you. Start
-                eating well today. You can cancel or pause anytime. And the
-                first meal is on us!
+                Refeições saudáveis, saborosas e descomplicadas esperam por você. Começar
+                comendo bem hoje. Você pode cancelar ou pausar a qualquer momento. E a
+                a primeira refeição é por nossa conta!
               </p>
               <form action="#" class="cta-form">
                 <div>
-                  <label for="full-name">Full Name</label>
+                  <label for="full-name">Nome Completo</label>
                   <input
                     id="full-name"
                     type="text"
-                    placeholder="John Smith"
+                    placeholder="Manuel Lino"
                     required
                   />
                 </div>
                 <div>
-                  <label for="email">Email address</label>
+                  <label for="email">Correio Electronico</label>
                   <input
                     id="email"
                     type="email"
@@ -501,18 +502,18 @@
                 </div>
 
                 <div>
-                  <label for="">Whwre did you hear from us?</label>
+                  <label for="">Onde voce ouviu sobre nós?</label>
                   <select name="" id="select-where" required>
-                    <option value="">Please choose one option:</option>
-                    <option value="Friends">Friends and family</option>
+                    <option value="">Porfavor escolha uma opção:</option>
+                    <option value="Friends">Amigos e familiares</option>
                     <option value="youtube">Youtube video</option>
                     <option value="podcast">Podcast</option>
                     <option value="ad">Facebook ads</option>
-                    <option value="others">Others</option>
+                    <option value="others">Outros</option>
                   </select>
                 </div>
 
-                <button type="submit" class="btn btn--form">Sign up now</button>
+                <button type="submit" class="btn btn--form">Cadastra-se agora</button>
               </form>
             </div>
             <div class="cta-img-box"></div>
